@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura | Quarentena Dev | Aula - 01</title>
+</head>
+<style>
+
+</style>
+<h1>Alura | Quarentena Dev | Aula - 01</h1>
+
+<h2>Exercicio 01</h2>
+
+<h3>Calculo das batidas</h3>
+
+<p>O nosso coração bate uma média de 75 vezes por minuto aproximadamente. Sabemos que 1 hora tem 60 minutos. Com essa informação conseguimos descobrir quantas batidas por hora o coração dá.</p>
+<p>Agora que sabemos as batidas por hora, conseguimos saber quantas batidas ele da por dia já que sabemos quantas horas tem o dia.</p>
+<p>Com a informação da quantidade de batida que o coração da por dia, conseguimos calcular quantas batidas o coração da por ano já que sabemos quantos dias o ano tem. Agora é só calcular quanto o coração já bateu durante toda nossa vida. Terminou esse desafio? Então aqui tem mais alguns para você praticar.</p>
+
+<h3>Resposta</h3>
+
+<h3>Mais exercicios</h3>
+
+<ol>
+    <li>O Criador de galinha me falou o seguinte: "Comprei 15 galinhas por 300 reias" Quanto ele pagou por cada galinha?</li>
+    <li>Maria foi a padaria e comprou 19 balas, depois voltou a padaria e comprou mais 45. Quantas balas Maria tem agora?</li>
+    <li>Para calcular a área de uma circunferência usamos a seguinte fórmula: area = pi x raio x raio. O valor de pi = 3.14, se o valor do meu raio é 2 qual a área da circunferência?</li>
+</ol>
+
+<p></p>
+<body>
+    <script>
+        var hora = 60;
+        var batidaCoracaoMinuto = 75;
+        var batidaCoracaoHora = hora * batidaCoracaoMinuto;
+        var batidaCoracaoDia = batidaCoracaoHora * 24;
+        var batidaCoracaoAno = batidaCoracaoDia * 365;
+
+        var nascDoUsuario = 1982;
+        var anoAtual = 2020;
+        var anosDeVida = anoAtual - nascDoUsuario;
+
+        var batidaDoCoracaoDoUsuario = anosDeVida * batidaCoracaoAno;
+
+        console.log(anosDeVida);
+
+        console.log(batidaCoracaoDia);
+
+        alert("Resposta do exercicio 01: " + batidaDoCoracaoDoUsuario + " batidas do corecao na vida do usuario.");
+
+        var galinhasCompradas = 15;
+        var valorTotalDasGalinhas = 300;
+        var custoPorGalinha = valorTotalDasGalinhas / galinhasCompradas;
+
+        alert("Foi pago R$" + custoPorGalinha + " reais por cada galinha.");
+
+        var primeiraCompraDeBalas = 19;
+        var segundaCompraDeBalas = 45;
+        var totalDeBalas = primeiraCompraDeBalas + segundaCompraDeBalas;
+
+        alert("Maria tem agora " + totalDeBalas + " balas.")
+
+        var pi = 3.14;
+        var raio = 2;
+        var area = pi * ( raio * raio);
+
+        alert("A area da minha circunferencia é de " + area + " metros.")
+        
+    </script>
+</body>
+</html>
